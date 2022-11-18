@@ -13,4 +13,4 @@ junto a soma de todos os valores da sequencia.
 
 
 VEJA A SAIDA!
-![alt text]('./saida.png')
+![alt text](./saida.png)
