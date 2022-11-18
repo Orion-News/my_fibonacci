@@ -18,7 +18,7 @@ class Fibonacci {
 		];	
 	*/
 	Init(term) {
-		// valida o valor inserido no input 'termo' para ver se existe sequencia, 
+		// valida o valor inserido no input 'termo' para ver se existe sequencia;
 		if(term <= 2) {
 			this.number = term -1;
 		   	} else {
@@ -45,7 +45,7 @@ class Fibonacci {
 
 	/* 
 		-:{ CalculateSum }:- [
-			(List) -> valor na memoria sem ter contato com a lista original,
+			(List) -> valor na memoria sem ter contato com a lista original;
 			
 			DESCRIPTION
 			{ CalculateSum }: responsavel por somar todos os valores com uma referencia da lista original,
@@ -80,10 +80,13 @@ class Fibonacci {
 		];
 	*/
 	DisplayValue(listSlice) {
+		// criando uma variável do tipo string para receber os pedaços da fatia;
 		let outputResult = '';
+		// loop para separar os pedaços por espaço e inserindo no resultado de saida;
 		for (let sliceCount = 0; sliceCount < listSlice.length; sliceCount++) {
 			outputResult += `${listSlice[sliceCount]} `;
 		};
+		// exibindo o resultado de saida;
 		process.stdout.write(outputResult);
 	};
 };
