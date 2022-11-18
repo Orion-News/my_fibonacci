@@ -12,3 +12,5 @@ junto a soma de todos os valores da sequencia.
 <i>Entrada 3 :-gera-sequencia-> 2 1 1 0 </i>
 
 
+VEJA A SAIDA!
+![alt text]('./saida.png')
