@@ -9,6 +9,6 @@ soma todos os valores gerado a partir do termo e exibir os 4 últimos valores de
 junto a soma de todos os valores da sequencia.
 </p>
 <b>EXEMPLO</b>
-<i>Entrada 3 :-gera-sequencia-> 4 2 1 1</i>
+<i>Entrada 3 :-gera-sequencia-> 4 2 1 1 </i>
 
 
