@@ -80,11 +80,11 @@ class Fibonacci {
 		];
 	*/
 	DisplayValue(listSlice) {
-		let outPutResult = '';
-		for (let i = 0; i < listSlice.length; i++) {
-			outPutResult += `${listSlice[i]} `;
+		let outputResult = '';
+		for (let sliceCount = 0; sliceCount < listSlice.length; sliceCount++) {
+			outputResult += `${listSlice[sliceCount]} `;
 		};
-		process.stdout.write(outPutResult);
+		process.stdout.write(outputResult);
 	};
 };
 
