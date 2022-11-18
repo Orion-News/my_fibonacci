@@ -81,7 +81,7 @@ class Fibonacci {
 	*/
 	DisplayValue(listSlice) {
 		let outPutResult = '';
-		for (let i = 0; i <= listSlice.length - 1; i++) {
+		for (let i = 0; i < listSlice.length; i++) {
 			outPutResult += `${listSlice[i]} `;
 		};
 		process.stdout.write(outPutResult);
