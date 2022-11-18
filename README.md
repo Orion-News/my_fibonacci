@@ -10,7 +10,10 @@ junto a soma de todos os valores da sequencia.
 </p>
 <b>EXEMPLO</b>
 <i>Entrada 3 :-gera-sequencia-> 2 1 1 0 </i>
-
+</br>
+</br>
+</br>
+</br>
 
 VEJA A SAIDA!
 ![alt text](./saida.png)
