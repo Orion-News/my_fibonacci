@@ -17,25 +17,25 @@ class Fibonacci {
 		// valida o valor inserido no input 'termo' para ver se existe sequencia;
 		if(term <= 2) {
 		        process.stdout.write(`Not Valid Value`);
-		   	} else {
-				// Fibonacci sequence, definitions of variables;
-                this.listFibonacci = '0 1';
-                this.penultimate = 0;
-                this.last = 1;
-                this.number;
+		} else {
+			// Fibonacci sequence, definitions of variables;
+			this.listFibonacci = '0 1';
+			this.penultimate = 0;
+			this.last = 1;
+			this.number;
 
-				// loop para gerar a sequencia a partir do termo;
-				for(let count = 3; count <= term; count++) {
-					// termo subsequente corresponde à soma dos dois anteriores;
-					this.number = this.last + this.penultimate;
-					// inserir na lista
-					this.listFibonacci += ` ${this.number}`;
-					// definir penultimo número como igual ao ultimo;
-					this.penultimate = this.last;
-					// definir ultimo igual ao correspondente a soma dos anteriores;
-					this.last = this.number;
-				};
-				// inicia o calculo de todos os valores inseridos na lista;
+			// loop para gerar a sequencia a partir do termo;
+			for(let count = 3; count <= term; count++) {
+				// termo subsequente corresponde à soma dos dois anteriores;
+				this.number = this.last + this.penultimate;
+				// inserir na lista
+				this.listFibonacci += ` ${this.number}`;
+				// definir penultimo número como igual ao ultimo;
+				this.penultimate = this.last;
+				// definir ultimo igual ao correspondente a soma dos anteriores;
+				this.last = this.number;
+			};
+			// inicia o calculo de todos os valores inseridos na lista;
 			this.CalculateSum(this.listFibonacci);
 		};
 	};
@@ -43,12 +43,12 @@ class Fibonacci {
 	/* 
 		-:{ CalculateSum }:- [
 			(List) -> valor na memoria sem ter contato com a lista original;
-			
+
 			DESCRIPTION
 			{ CalculateSum }: Recebe uma String, 
-                divide os valores em uma lista separada da String original;
-                calcula a soma de todos os valores da lista separada;
-                atribui a soma da lista separada a String original;
+		divide os valores em uma lista separada da String original;
+		calcula a soma de todos os valores da lista separada;
+		atribui a soma da lista separada a String original;
 		];
 	*/
 	CalculateSum(list) {
@@ -101,10 +101,10 @@ class Fibonacci {
 	DisplayValue(listSlice) {
 		// criando uma variável do tipo string para receber os pedaços da fatia;
 		let outputResult = '';
-        
+
 		// loop para separar os pedaços por espaço e inserindo no resultado de saida;
 		for (let sliceCount = 0; sliceCount < listSlice.length; sliceCount++) {
-            outputResult += `${listSlice[sliceCount]} `;
+			outputResult += `${listSlice[sliceCount]} `;
 		};
 
 		// exibindo o resultado de saida;
