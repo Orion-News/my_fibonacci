@@ -52,22 +52,22 @@ class Fibonacci {
 		];
 	*/
 	CalculateSum(list) {
-        // transforma a string em uma lista;
-        let splintInList = list.split(' ');
+		// transforma a string em uma lista;
+		let splintInList = list.split(' ');
 
-        // calcula a soma de todos os valores da lista dividida;
+		// calcula a soma de todos os valores da lista dividida;
 		let reduceList = splintInList.reduce((a, b) => {
-            return parseInt(a) + parseInt(b);
+			return parseInt(a) + parseInt(b);
 		});
 
-        // atribui a soma da lista dividida a string original;
-        list += ` ${reduceList}`;
+		// atribui a soma da lista dividida a string original;
+		list += ` ${reduceList}`;
 
-        // passa valor para função que vai formatar a String;
-		this.FormatValue(list);
+		// passa valor para função que vai formatar a String;
+			this.FormatValue(list);
 	};
 
-    /* 
+    	/* 
 		-:{ FormatValue }:- [
 			(list) -> sequencia Fibonacci + a soma de todos os termos em uma string,
 				utiliza de metodos já criados no javascript para reverte e formatar uma string;
@@ -78,17 +78,17 @@ class Fibonacci {
                 o ultimo processo de exibição de valores geradors a partir do termo de entrada;
 		];
 	*/
-    FormatValue(list) {
-        let splitInList = list.split(' ');
+	 FormatValue(list) {
+		let splitInList = list.split(' ');
 
-        let reverseList = splitInList.reverse();
+		let reverseList = splitInList.reverse();
 
-        let sliceList = reverseList.slice(0, 4);
+		let sliceList = reverseList.slice(0, 4);
 
-        this.DisplayValue(sliceList);
-    };
+		this.DisplayValue(sliceList);
+	 };
 
-	/* 
+	 /* 
 		-:{ DisplayValue }:- [
 			(ListSlice) -> valor recortado da lista na memoria, para ser exibido,
 				criado um loop para remover os valores do array transformando em uma string com espaço;
@@ -98,7 +98,7 @@ class Fibonacci {
 				com os 4 valores gerado por um determinado termo de entrada;
 		];
 	*/
-	DisplayValue(listSlice) {
+         DisplayValue(listSlice) {
 		// criando uma variável do tipo string para receber os pedaços da fatia;
 		let outputResult = '';
 
