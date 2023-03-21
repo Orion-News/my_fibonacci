@@ -18,7 +18,8 @@ class Fibonacci {
 		if(term <= 2) {
 		        process.stdout.write(`Not Valid Value`);
 		} else {
-			// Fibonacci sequence, definitions of variables;
+			
+			// Fibonacci sequencia, definição de variaveis;
 			this.listFibonacci = '0 1';
 			this.penultimate = 0;
 			this.last = 1;
